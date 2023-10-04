@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 COPY ./entrypoint.sh /entrypoint.sh
 
 RUN ls -a
-RUN sed -i 's/\r//' /entrypoint.sh
+RUN sed -i -e 's/\r$//' /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 RUN chown nobody /entrypoint.sh
 
