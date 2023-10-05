@@ -17,3 +17,5 @@ python3 dashboard/manage.py migrate
 
 # Start the Django development server
 python3 dashboard/manage.py runserver 0.0.0.0:8080
+
+ 
