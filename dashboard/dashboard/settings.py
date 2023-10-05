@@ -91,22 +91,32 @@ WSGI_APPLICATION = 'dashboard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+
+#     "default": {
+
+#         "ENGINE": "django.db.backends."+ os.environ.get('DJANGO_APP_DB_ENGINE', 'postgresql'),
+#         "NAME": os.environ.get('DJANGO_APP_DB_NAME', 'postgres'),
+#         "USER": os.environ.get('DJANGO_APP_DB_USER', 'postgres'),
+#         "HOST": os.environ.get('DJANGO_APP_DB_HOST', 'postgres'),
+#         "PORT": os.environ.get('DJANGO_APP_DB_PORT', 5432),
+#         'PASSWORD': os.environ.get('DJANGO_APP_DB_PASSWORD', '3r1qxxu9oiHs2xSRsUr8'),
+#         'CONN_MAX_AGE': 0 if DEBUG else 60,
+#     }
+
+# }
+
 DATABASES = {
 
-    "default": {
+    'default': {
 
-        "ENGINE": "django.db.backends."+ os.environ.get('DJANGO_APP_DB_ENGINE', 'postgresql'),
-        "NAME": os.environ.get('DJANGO_APP_DB_NAME', 'postgres'),
-        "USER": os.environ.get('DJANGO_APP_DB_USER', 'postgres'),
-        "HOST": os.environ.get('DJANGO_APP_DB_HOST', 'postgres'),
-        "PORT": os.environ.get('DJANGO_APP_DB_PORT', 5432),
-        'PASSWORD': os.environ.get('DJANGO_APP_DB_PASSWORD', '3r1qxxu9oiHs2xSRsUr8'),
-        'CONN_MAX_AGE': 0 if DEBUG else 60,
+        'ENGINE': 'django.db.backends.sqlite3',
+
+        'NAME': BASE_DIR / 'db.sqlite3',
+
     }
 
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
