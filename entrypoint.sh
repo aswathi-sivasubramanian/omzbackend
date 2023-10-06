@@ -1,5 +1,5 @@
 #! bin/sh
-# Apply database migrations
+#Apply database migrations
 
 python3 dashboard/manage.py makemigrations
 python3 dashboard/manage.py migrate
