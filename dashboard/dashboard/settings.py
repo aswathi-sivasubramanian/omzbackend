@@ -31,7 +31,9 @@ DEBUG = True
 # if DEBUG:
 #     ALLOWED_HOSTS.append('*')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.3.55'
+]
 
 
 # Application definition
