@@ -32,7 +32,9 @@ DEBUG = True
 #     ALLOWED_HOSTS.append('*')
 
 ALLOWED_HOSTS = [
-    '192.168.3.55'
+    '192.168.3.55',
+    'localhost',
+    '127.0.0.1',
 ]
 
 
