@@ -6,7 +6,6 @@ from .views import *
 router = DefaultRouter()
 router.register(r'accesspoints', AccessPointsViewSet)
 
-
 urlpatterns = [
     path('', include(router.urls)),
 ]

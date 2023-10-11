@@ -8,3 +8,4 @@ from rest_framework import viewsets
 class AccessPointsViewSet(viewsets.ModelViewSet):
     queryset = AccessPoints.objects.all()
     serializer_class = AccessPointsSerializer
+
