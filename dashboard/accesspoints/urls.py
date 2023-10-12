@@ -8,4 +8,5 @@ router.register(r'accesspoints', AccessPointsViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('get_accesspoints',get_accesspoints)
 ]

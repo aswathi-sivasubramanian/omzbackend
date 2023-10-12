@@ -24,5 +24,4 @@ urlpatterns = [
     path('api/v1/',include('accesspoints.urls')),
     path('api/v1/',include('devices.urls')),
     path('api/v1/',include('sites.urls')),
-    path('api/v1/get_accesspoints',get_accesspoints),
 ]
