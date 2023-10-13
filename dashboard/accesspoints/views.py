@@ -21,7 +21,7 @@ def geojson_accesspoints(request):
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [access_point.Latitude, access_point.Longitude]
+                "coordinates": [access_point.Longitude, access_point.Latitude]
             },
             "properties": {
                 "OBJECTID": access_point.OBJECTID,
