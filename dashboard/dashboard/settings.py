@@ -53,9 +53,10 @@ INSTALLED_APPS = [
     # 'rest_framework_swagger'
     
     # Custom apps
-    'sites',
-    'devices',
-    'accesspoints',
+    'accesspoint',
+    'interface',
+    'bss',
+    'metrics',
 ]
 
 MIDDLEWARE = [
