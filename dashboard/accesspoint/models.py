@@ -6,5 +6,5 @@ class Accesspoint(models.Model):
     borough = models.CharField(max_length=2)
     latitude = models.FloatField()
     longitude = models.FloatField()
-    location = models.CharField(max_length=20)
+    location = models.CharField(max_length=50)
     status = models.CharField(max_length=20)
